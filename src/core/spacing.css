@@ -1,0 +1,34 @@
+/* Paw-based spacing system */
+
+:root {
+  --paw-1: 4px;
+  --paw-2: 8px;
+  --paw-3: 12px;
+  --paw-4: 16px;
+  --paw-5: 20px;
+  --paw-6: 24px;
+  --paw-7: 28px;
+  --paw-8: 32px;
+  --whisker-gap: 48px;
+}
+
+/* Padding */
+.paw-1 { padding: var(--paw-1); }
+.paw-2 { padding: var(--paw-2); }
+.paw-3 { padding: var(--paw-3); }
+.paw-4 { padding: var(--paw-4); }
+.paw-5 { padding: var(--paw-5); }
+.paw-6 { padding: var(--paw-6); }
+.paw-7 { padding: var(--paw-7); }
+.paw-8 { padding: var(--paw-8); }
+.whisker-gap { padding: var(--whisker-gap); }
+
+/* Margin */
+.m-paw-1 { margin: var(--paw-1); }
+.m-paw-2 { margin: var(--paw-2); }
+.m-paw-3 { margin: var(--paw-3); }
+.m-paw-4 { margin: var(--paw-4); }
+.m-paw-5 { margin: var(--paw-5); }
+.m-paw-6 { margin: var(--paw-6); }
+.m-paw-7 { margin: var(--paw-7); }
+.m-paw-8 { margin: var(--paw-8); }
