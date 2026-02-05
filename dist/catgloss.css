@@ -1,0 +1,101 @@
+/* catgloss v0.1.0 - CSS framework for dreamy interfaces */
+/* made with insomnia + lavender tea */
+
+/* ===== COLORS ===== */
+
+:root {
+  /* Soft pastels */
+  --lavender-haze: #E6D5F5;
+  --rose-mist: #FFE4E9;
+  --ocean-pale: #D4E8F0;
+  --velvet-cream: #F5F0E8;
+  
+  /* Accents */
+  --shimmer-glow: #FFD4E5;
+  --neko-violet: #C4B5FD;
+  --static-gray: #B8B8C8;
+  
+  /* Dark mode */
+  --midnight-blur: #1A1A2E;
+  --shadow-velvet: #16213E;
+}
+
+.bg-lavender-haze { background-color: var(--lavender-haze); }
+.bg-rose-mist { background-color: var(--rose-mist); }
+.bg-ocean-pale { background-color: var(--ocean-pale); }
+.bg-velvet-cream { background-color: var(--velvet-cream); }
+.bg-midnight-blur { background-color: var(--midnight-blur); }
+.bg-shadow-velvet { background-color: var(--shadow-velvet); }
+
+.text-shimmer { color: var(--shimmer-glow); }
+.text-neko { color: var(--neko-violet); }
+.text-static { color: var(--static-gray); }
+.text-lavender { color: var(--lavender-haze); }
+.text-rose { color: var(--rose-mist); }
+
+/* ===== SPACING ===== */
+
+:root {
+  --paw-1: 4px;
+  --paw-2: 8px;
+  --paw-3: 12px;
+  --paw-4: 16px;
+  --paw-5: 20px;
+  --paw-6: 24px;
+  --paw-7: 28px;
+  --paw-8: 32px;
+  --whisker-gap: 48px;
+}
+
+.paw-1 { padding: var(--paw-1); }
+.paw-2 { padding: var(--paw-2); }
+.paw-3 { padding: var(--paw-3); }
+.paw-4 { padding: var(--paw-4); }
+.paw-5 { padding: var(--paw-5); }
+.paw-6 { padding: var(--paw-6); }
+.paw-7 { padding: var(--paw-7); }
+.paw-8 { padding: var(--paw-8); }
+.whisker-gap { padding: var(--whisker-gap); }
+
+.m-paw-1 { margin: var(--paw-1); }
+.m-paw-2 { margin: var(--paw-2); }
+.m-paw-3 { margin: var(--paw-3); }
+.m-paw-4 { margin: var(--paw-4); }
+.m-paw-5 { margin: var(--paw-5); }
+.m-paw-6 { margin: var(--paw-6); }
+.m-paw-7 { margin: var(--paw-7); }
+.m-paw-8 { margin: var(--paw-8); }
+
+/* ===== BLUR & HAZE ===== */
+
+.haze-light {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.haze-medium {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.haze-heavy {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.blur-soft { filter: blur(2px); }
+.blur-dreamy { filter: blur(4px); }
+
+/* ===== SOFTNESS ===== */
+
+.soft-edges { border-radius: 8px; }
+.velvet-edges { border-radius: 16px; }
+.cloud-edges { border-radius: 24px; }
+.pill-edges { border-radius: 9999px; }
+
+.soft-shadow { box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); }
+.velvet-shadow { box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15); }
+.dream-shadow { box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); }
+
+.shimmer-glow { box-shadow: 0 0 16px rgba(255, 212, 229, 0.5); }
+.neko-glow { box-shadow: 0 0 16px rgba(196, 181, 253, 0.5); }
