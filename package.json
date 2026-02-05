@@ -1,0 +1,27 @@
+{
+  "name": "@shimmerwhere/catgloss",
+  "version": "0.1.0",
+  "description": "A lightweight CSS framework for dreamy, cat-coded interfaces",
+  "main": "dist/catgloss.css",
+  "style": "dist/catgloss.css",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "css",
+    "framework",
+    "aesthetic",
+    "dreamy",
+    "cat-coded",
+    "shimmerwhere"
+  ],
+  "author": "iris @ daggerlust",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shimmerwhere/catgloss"
+  },
+  "unpkg": "dist/catgloss.css",
+  "jsdelivr": "dist/catgloss.css"
+}
