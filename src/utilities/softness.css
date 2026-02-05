@@ -1,0 +1,40 @@
+/* Softness utilities - rounded corners & shadows */
+
+/* Border radius */
+.soft-edges {
+  border-radius: 8px;
+}
+
+.velvet-edges {
+  border-radius: 16px;
+}
+
+.cloud-edges {
+  border-radius: 24px;
+}
+
+.pill-edges {
+  border-radius: 9999px;
+}
+
+/* Soft shadows */
+.soft-shadow {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.velvet-shadow {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.dream-shadow {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+/* Glow effects */
+.shimmer-glow {
+  box-shadow: 0 0 16px rgba(255, 212, 229, 0.5);
+}
+
+.neko-glow {
+  box-shadow: 0 0 16px rgba(196, 181, 253, 0.5);
+}
