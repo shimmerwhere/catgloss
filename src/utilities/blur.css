@@ -1,0 +1,24 @@
+/* Haze & blur effects */
+
+.haze-light {
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.haze-medium {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.haze-heavy {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.blur-soft {
+  filter: blur(2px);
+}
+
+.blur-dreamy {
+  filter: blur(4px);
+}
