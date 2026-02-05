@@ -1,0 +1,33 @@
+/* catgloss color palette */
+
+:root {
+  /* Soft pastels */
+  --lavender-haze: #E6D5F5;
+  --rose-mist: #FFE4E9;
+  --ocean-pale: #D4E8F0;
+  --velvet-cream: #F5F0E8;
+  
+  /* Accents */
+  --shimmer-glow: #FFD4E5;
+  --neko-violet: #C4B5FD;
+  --static-gray: #B8B8C8;
+  
+  /* Dark mode */
+  --midnight-blur: #1A1A2E;
+  --shadow-velvet: #16213E;
+}
+
+/* Background utilities */
+.bg-lavender-haze { background-color: var(--lavender-haze); }
+.bg-rose-mist { background-color: var(--rose-mist); }
+.bg-ocean-pale { background-color: var(--ocean-pale); }
+.bg-velvet-cream { background-color: var(--velvet-cream); }
+.bg-midnight-blur { background-color: var(--midnight-blur); }
+.bg-shadow-velvet { background-color: var(--shadow-velvet); }
+
+/* Text utilities */
+.text-shimmer { color: var(--shimmer-glow); }
+.text-neko { color: var(--neko-violet); }
+.text-static { color: var(--static-gray); }
+.text-lavender { color: var(--lavender-haze); }
+.text-rose { color: var(--rose-mist); }
