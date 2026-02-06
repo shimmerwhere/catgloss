@@ -1,0 +1,122 @@
+/* catgloss button components */
+
+.btn {
+  display: inline-block;
+  padding: var(--paw-3) var(--paw-5);
+  border: none;
+  border-radius: 8px;
+  font-size: var(--speak);
+  font-weight: var(--weight-medium);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--transition-smooth);
+  line-height: 1.5;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Button variants */
+.btn-soft {
+  background-color: var(--lavender-haze);
+  color: var(--midnight-blur);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-soft:hover:not(:disabled) {
+  background-color: var(--neko-violet);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-velvet {
+  background-color: var(--neko-violet);
+  color: white;
+  box-shadow: 0 4px 16px rgba(196, 181, 253, 0.3);
+}
+
+.btn-velvet:hover:not(:disabled) {
+  background-color: #B4A5ED;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(196, 181, 253, 0.5);
+}
+
+.btn-shimmer {
+  background: linear-gradient(
+    135deg,
+    var(--shimmer-glow),
+    var(--rose-mist),
+    var(--shimmer-glow)
+  );
+  background-size: 200% auto;
+  color: var(--midnight-blur);
+  animation: shimmer-iridescent 3s linear infinite;
+}
+
+.btn-shimmer:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(255, 212, 229, 0.4);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--neko-violet);
+  border: 2px solid var(--neko-violet);
+}
+
+.btn-ghost:hover:not(:disabled) {
+  background-color: var(--lavender-haze);
+  border-color: var(--neko-violet);
+}
+
+.btn-midnight {
+  background-color: var(--midnight-blur);
+  color: var(--lavender-haze);
+  box-shadow: 0 4px 16px rgba(26, 26, 46, 0.3);
+}
+
+.btn-midnight:hover:not(:disabled) {
+  background-color: var(--shadow-velvet);
+  box-shadow: 0 6px 20px rgba(26, 26, 46, 0.5);
+}
+
+/* Button sizes */
+.btn-sm {
+  padding: var(--paw-2) var(--paw-4);
+  font-size: var(--murmur);
+}
+
+.btn-lg {
+  padding: var(--paw-4) var(--paw-6);
+  font-size: var(--announce);
+}
+
+.btn-xl {
+  padding: var(--paw-5) var(--paw-8);
+  font-size: var(--proclaim);
+}
+
+/* Button shapes */
+.btn-pill {
+  border-radius: 9999px;
+}
+
+.btn-square {
+  border-radius: 0;
+}
+
+/* Full width */
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* Button with icon support */
+.btn-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--paw-2);
+}
