@@ -1,0 +1,124 @@
+/* catgloss navigation components */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--paw-4) var(--paw-6);
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-hazy {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.navbar-dreamy {
+  background: linear-gradient(
+    90deg,
+    rgba(230, 213, 245, 0.9),
+    rgba(255, 228, 233, 0.9)
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.navbar-midnight {
+  background-color: var(--midnight-blur);
+  color: var(--lavender-haze);
+}
+
+/* Navbar brand */
+.navbar-brand {
+  font-size: var(--announce);
+  font-weight: var(--weight-bold);
+  text-decoration: none;
+  color: var(--midnight-blur);
+}
+
+.navbar-midnight .navbar-brand {
+  color: var(--lavender-haze);
+}
+
+/* Navbar links */
+.navbar-nav {
+  display: flex;
+  gap: var(--paw-5);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: var(--midnight-blur);
+  font-size: var(--speak);
+  font-weight: var(--weight-medium);
+  padding: var(--paw-2) var(--paw-3);
+  border-radius: 8px;
+  transition: all var(--transition-smooth);
+}
+
+.navbar-link:hover {
+  background-color: var(--lavender-haze);
+  color: var(--neko-violet);
+}
+
+.navbar-midnight .navbar-link {
+  color: var(--lavender-haze);
+}
+
+.navbar-midnight .navbar-link:hover {
+  background-color: var(--shadow-velvet);
+  color: white;
+}
+
+.navbar-link.active {
+  background-color: var(--neko-violet);
+  color: white;
+}
+
+/* Sidebar navigation */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  padding: var(--paw-6);
+}
+
+.sidebar-dreamy {
+  background: linear-gradient(
+    180deg,
+    var(--lavender-haze),
+    var(--rose-mist)
+  );
+}
+
+.sidebar-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-link {
+  display: block;
+  padding: var(--paw-3) var(--paw-4);
+  text-decoration: none;
+  color: var(--midnight-blur);
+  border-radius: 8px;
+  margin-bottom: var(--paw-2);
+  transition: all var(--transition-smooth);
+}
+
+.sidebar-link:hover {
+  background-color: var(--lavender-haze);
+  transform: translateX(4px);
+}
+
+.sidebar-link.active {
+  background-color: var(--neko-violet);
+  color: white;
+}
