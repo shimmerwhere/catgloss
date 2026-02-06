@@ -1,0 +1,238 @@
+/* catgloss animation library */
+
+:root {
+  --transition-quick: 150ms ease;
+  --transition-smooth: 300ms ease;
+  --transition-dreamy: 500ms ease;
+  --transition-lazy: 800ms ease;
+}
+
+/* Transitions */
+.transition-quick { transition: all var(--transition-quick); }
+.transition-smooth { transition: all var(--transition-smooth); }
+.transition-dreamy { transition: all var(--transition-dreamy); }
+.transition-lazy { transition: all var(--transition-lazy); }
+
+/* Float animation */
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.float-slow {
+  animation: float 6s ease-in-out infinite;
+}
+
+.float-fast {
+  animation: float 1.5s ease-in-out infinite;
+}
+
+/* Pulse animation */
+.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 8px rgba(196, 181, 253, 0.3);
+  }
+  50% { 
+    box-shadow: 0 0 24px rgba(196, 181, 253, 0.8);
+  }
+}
+
+/* Shimmer animation */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Iridescent shimmer */
+.shimmer-iridescent {
+  background: linear-gradient(
+    90deg,
+    var(--lavender-haze),
+    var(--shimmer-glow),
+    var(--ocean-pale),
+    var(--rose-mist),
+    var(--lavender-haze)
+  );
+  background-size: 200% auto;
+  animation: shimmer-iridescent 4s linear infinite;
+}
+
+@keyframes shimmer-iridescent {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/* Fade animations */
+.fade-in {
+  animation: fade-in 0.5s ease-in;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in-up {
+  animation: fade-in-up 0.6s ease-out;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-down {
+  animation: fade-in-down 0.6s ease-out;
+}
+
+@keyframes fade-in-down {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* VHS glitch effect */
+.glitch-vhs {
+  animation: glitch-vhs 3s infinite;
+}
+
+@keyframes glitch-vhs {
+  0%, 90%, 100% {
+    transform: translateX(0);
+    filter: none;
+  }
+  92% {
+    transform: translateX(-2px);
+    filter: hue-rotate(10deg);
+  }
+  94% {
+    transform: translateX(2px);
+    filter: hue-rotate(-10deg);
+  }
+  96% {
+    transform: translateX(-1px);
+  }
+}
+
+/* Gentle bounce */
+.bounce-soft {
+  animation: bounce-soft 2s ease-in-out infinite;
+}
+
+@keyframes bounce-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* Spin (for loading states) */
+.spin-slow {
+  animation: spin 3s linear infinite;
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+.spin-fast {
+  animation: spin 0.5s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Wiggle (cat-like) */
+.wiggle {
+  animation: wiggle 1s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-3deg); }
+  75% { transform: rotate(3deg); }
+}
+
+/* Purr (subtle vibration) */
+.purr {
+  animation: purr 0.1s ease-in-out infinite;
+}
+
+@keyframes purr {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(1px); }
+}
+
+/* Scale hover effects */
+.hover-grow {
+  transition: transform var(--transition-smooth);
+}
+
+.hover-grow:hover {
+  transform: scale(1.05);
+}
+
+.hover-grow-lg {
+  transition: transform var(--transition-smooth);
+}
+
+.hover-grow-lg:hover {
+  transform: scale(1.1);
+}
+
+.hover-lift {
+  transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Glow hover effect */
+.hover-glow {
+  transition: box-shadow var(--transition-smooth);
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 24px rgba(196, 181, 253, 0.6);
+}
