@@ -1,8 +1,27 @@
-/* catgloss v0.1.0 - CSS framework for dreamy interfaces */
-/* made with insomnia + lavender tea */
+/* 
+ * catgloss v2.0.0
+ * A lightweight CSS framework for dreamy, cat-coded interfaces
+*/
 
-/* ===== COLORS ===== */
+/* ============================================
+   CORE STYLES
+   ============================================ 
+*/
 
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1A1A2E;
+}
+
+/* Colors */
 :root {
   /* Soft pastels */
   --lavender-haze: #E6D5F5;
@@ -18,24 +37,35 @@
   /* Dark mode */
   --midnight-blur: #1A1A2E;
   --shadow-velvet: #16213E;
-}
 
-.bg-lavender-haze { background-color: var(--lavender-haze); }
-.bg-rose-mist { background-color: var(--rose-mist); }
-.bg-ocean-pale { background-color: var(--ocean-pale); }
-.bg-velvet-cream { background-color: var(--velvet-cream); }
-.bg-midnight-blur { background-color: var(--midnight-blur); }
-.bg-shadow-velvet { background-color: var(--shadow-velvet); }
+  /* Typography */
+  --whisper: 0.75rem;
+  --murmur: 0.875rem;
+  --speak: 1rem;
+  --announce: 1.25rem;
+  --proclaim: 1.5rem;
+  --declare: 2rem;
+  --shout: 2.5rem;
+  --howl: 3rem;
 
-.text-shimmer { color: var(--shimmer-glow); }
-.text-neko { color: var(--neko-violet); }
-.text-static { color: var(--static-gray); }
-.text-lavender { color: var(--lavender-haze); }
-.text-rose { color: var(--rose-mist); }
+  --line-tight: 1.25;
+  --line-cozy: 1.5;
+  --line-spacious: 1.75;
+  --line-airy: 2;
 
-/* ===== SPACING ===== */
+  --tracking-close: -0.025em;
+  --tracking-normal: 0;
+  --tracking-relaxed: 0.025em;
+  --tracking-dreamy: 0.05em;
+  --tracking-ethereal: 0.1em;
 
-:root {
+  --weight-whisper: 300;
+  --weight-soft: 400;
+  --weight-medium: 500;
+  --weight-bold: 600;
+  --weight-heavy: 700;
+
+  /* Spacing */
   --paw-1: 4px;
   --paw-2: 8px;
   --paw-3: 12px;
@@ -45,57 +75,27 @@
   --paw-7: 28px;
   --paw-8: 32px;
   --whisker-gap: 48px;
+
+  /* Transitions */
+  --transition-quick: 150ms ease;
+  --transition-smooth: 300ms ease;
+  --transition-dreamy: 500ms ease;
+  --transition-lazy: 800ms ease;
 }
 
-.paw-1 { padding: var(--paw-1); }
-.paw-2 { padding: var(--paw-2); }
-.paw-3 { padding: var(--paw-3); }
-.paw-4 { padding: var(--paw-4); }
-.paw-5 { padding: var(--paw-5); }
-.paw-6 { padding: var(--paw-6); }
-.paw-7 { padding: var(--paw-7); }
-.paw-8 { padding: var(--paw-8); }
-.whisker-gap { padding: var(--whisker-gap); }
-
-.m-paw-1 { margin: var(--paw-1); }
-.m-paw-2 { margin: var(--paw-2); }
-.m-paw-3 { margin: var(--paw-3); }
-.m-paw-4 { margin: var(--paw-4); }
-.m-paw-5 { margin: var(--paw-5); }
-.m-paw-6 { margin: var(--paw-6); }
-.m-paw-7 { margin: var(--paw-7); }
-.m-paw-8 { margin: var(--paw-8); }
-
-/* ===== BLUR & HAZE ===== */
-
-.haze-light {
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-}
-
-.haze-medium {
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-}
-
-.haze-heavy {
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-}
-
-.blur-soft { filter: blur(2px); }
-.blur-dreamy { filter: blur(4px); }
-
-/* ===== SOFTNESS ===== */
-
-.soft-edges { border-radius: 8px; }
-.velvet-edges { border-radius: 16px; }
-.cloud-edges { border-radius: 24px; }
-.pill-edges { border-radius: 9999px; }
-
-.soft-shadow { box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); }
-.velvet-shadow { box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15); }
-.dream-shadow { box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); }
-
-.shimmer-glow { box-shadow: 0 0 16px rgba(255, 212, 229, 0.5); }
-.neko-glow { box-shadow: 0 0 16px rgba(196, 181, 253, 0.5); }
+/* Import all modules */
+@import './core/colors.css';
+@import './core/spacing.css';
+@import './core/typography.css';
+@import './utilities/blur.css';
+@import './utilities/softness.css';
+@import './utilities/animations.css';
+@import './utilities/layout.css';
+@import './utilities/colors-extended.css';
+@import './components/buttons.css';
+@import './components/cards.css';
+@import './components/inputs.css';
+@import './components/navigation.css';
+@import './components/modals.css';
+@import './components/badges.css';
+@import './components/loading.css';
