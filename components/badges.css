@@ -1,0 +1,67 @@
+/* catgloss badge components */
+
+.badge {
+  display: inline-block;
+  padding: var(--paw-1) var(--paw-3);
+  font-size: var(--whisper);
+  font-weight: var(--weight-medium);
+  border-radius: 9999px;
+  line-height: 1;
+}
+
+.badge-soft {
+  background-color: var(--lavender-haze);
+  color: var(--midnight-blur);
+}
+
+.badge-velvet {
+  background-color: var(--neko-violet);
+  color: white;
+}
+
+.badge-shimmer {
+  background-color: var(--shimmer-glow);
+  color: var(--midnight-blur);
+}
+
+.badge-rose {
+  background-color: var(--rose-mist);
+  color: var(--midnight-blur);
+}
+
+.badge-ocean {
+  background-color: var(--ocean-pale);
+  color: var(--midnight-blur);
+}
+
+.badge-midnight {
+  background-color: var(--midnight-blur);
+  color: var(--lavender-haze);
+}
+
+/* Badge with glow */
+.badge-glow {
+  box-shadow: 0 0 12px currentColor;
+}
+
+/* Badge sizes */
+.badge-sm {
+  padding: 2px var(--paw-2);
+  font-size: 0.625rem;
+}
+
+.badge-lg {
+  padding: var(--paw-2) var(--paw-4);
+  font-size: var(--murmur);
+}
+
+/* Pill variant (same as badge but can have different semantic use) */
+.pill {
+  display: inline-block;
+  padding: var(--paw-2) var(--paw-4);
+  font-size: var(--murmur);
+  font-weight: var(--weight-medium);
+  border-radius: 9999px;
+  background-color: var(--lavender-haze);
+  color: var(--midnight-blur);
+}
