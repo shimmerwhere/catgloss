@@ -1,0 +1,112 @@
+/* catgloss modal components */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 26, 46, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fade-in 0.3s ease-out;
+}
+
+.modal-overlay-dreamy {
+  background: radial-gradient(
+    circle,
+    rgba(230, 213, 245, 0.4),
+    rgba(26, 26, 46, 0.6)
+  );
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.modal {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow: auto;
+  animation: fade-in-up 0.4s ease-out;
+}
+
+.modal-dreamy {
+  background: linear-gradient(
+    135deg,
+    rgba(230, 213, 245, 0.95),
+    rgba(255, 228, 233, 0.95)
+  );
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.modal-header {
+  padding: var(--paw-6);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-title {
+  font-size: var(--announce);
+  font-weight: var(--weight-bold);
+  margin: 0;
+  color: var(--midnight-blur);
+}
+
+.modal-close {
+  background: none;
+  border: none;
+  font-size: var(--proclaim);
+  color: var(--static-gray);
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all var(--transition-smooth);
+}
+
+.modal-close:hover {
+  background-color: var(--lavender-haze);
+  color: var(--midnight-blur);
+}
+
+.modal-body {
+  padding: var(--paw-6);
+  font-size: var(--speak);
+  line-height: var(--line-cozy);
+  color: var(--midnight-blur);
+}
+
+.modal-footer {
+  padding: var(--paw-6);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--paw-3);
+}
+
+/* Modal sizes */
+.modal-sm {
+  max-width: 350px;
+}
+
+.modal-lg {
+  max-width: 700px;
+}
+
+.modal-xl {
+  max-width: 900px;
+}
