@@ -1,0 +1,43 @@
+/* Extended color utilities */
+
+/* Opacity variants for backgrounds */
+.bg-lavender-haze-light { background-color: rgba(230, 213, 245, 0.5); }
+.bg-rose-mist-light { background-color: rgba(255, 228, 233, 0.5); }
+.bg-ocean-pale-light { background-color: rgba(212, 232, 240, 0.5); }
+
+/* Gradient backgrounds */
+.bg-gradient-dreamy {
+  background: linear-gradient(135deg, var(--lavender-haze), var(--rose-mist));
+}
+
+.bg-gradient-ocean {
+  background: linear-gradient(135deg, var(--ocean-pale), var(--lavender-haze));
+}
+
+.bg-gradient-shimmer {
+  background: linear-gradient(135deg, var(--shimmer-glow), var(--neko-violet));
+}
+
+.bg-gradient-midnight {
+  background: linear-gradient(135deg, var(--midnight-blur), var(--shadow-velvet));
+}
+
+/* Border colors */
+.border-lavender { border-color: var(--lavender-haze); }
+.border-rose { border-color: var(--rose-mist); }
+.border-ocean { border-color: var(--ocean-pale); }
+.border-neko { border-color: var(--neko-violet); }
+.border-midnight { border-color: var(--midnight-blur); }
+
+/* Border utilities */
+.border { border-width: 1px; border-style: solid; }
+.border-2 { border-width: 2px; border-style: solid; }
+.border-4 { border-width: 4px; border-style: solid; }
+.border-none { border: none; }
+
+/* Opacity utilities */
+.opacity-0 { opacity: 0; }
+.opacity-25 { opacity: 0.25; }
+.opacity-50 { opacity: 0.5; }
+.opacity-75 { opacity: 0.75; }
+.opacity-100 { opacity: 1; }
