@@ -137,4 +137,4 @@ catgloss is for interfaces that feel like **memories you never had**.
 
 *Part of the [Shimmerwhere](https://github.com/shimmerwhere) universe*
 
-made with insomnia + lavender tea — [z @ LAVENDERISH](https://github.com/LAVENDERISH) ✿
+made with insomnia + lavender tea — [z @ SLOWSYNCED](https://github.com/SLOWSYNCED) ✿
